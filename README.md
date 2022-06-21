@@ -7,6 +7,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Graphcms](https://graphcms.com/)
+- [Apollographql](https://www.apollographql.com/docs/react/)
 - [Prettier](https://prettier.io/)
 - [Eslint](https://eslint.org/)
 - [Husky](https://typicode.github.io/husky/#/)
