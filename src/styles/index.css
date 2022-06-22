@@ -11,7 +11,9 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-zinc-900 text-zinc-100;
+  @apply bg-gray-900 text-zinc-100;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 code {
