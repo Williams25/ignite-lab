@@ -75,5 +75,5 @@ yarn page PageName
 npm run page PageName
 
 // página criada em:
-// src/layouts/PageName
+// src/pages/PageName
 ```
