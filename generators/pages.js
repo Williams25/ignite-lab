@@ -7,17 +7,17 @@ module.exports = function (plop) {
       {
         type: "input",
         name: "name",
-        message: "page name?",
-      },
+        message: "page name?"
+      }
     ],
 
     // actions to perform
     actions: [
       {
         type: "add",
-        path: "../src/layouts/{{pascalCase name}}/index.tsx",
-        templateFile: "../templates/pages/index.tsx.hbs",
-      },
-    ],
+        path: "../src/pages/{{pascalCase name}}/index.tsx",
+        templateFile: "../templates/pages/index.tsx.hbs"
+      }
+    ]
   });
 };
