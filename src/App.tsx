@@ -1,9 +1,9 @@
-import { Event } from "./pages/Event";
+import { Router } from "./Router";
 
 export const App = () => {
   return (
     <>
-      <Event />
+      <Router />
     </>
   );
 };
