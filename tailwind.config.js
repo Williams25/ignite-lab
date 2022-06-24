@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
+      backgroundImage: {
+        blur: "url(./src/public/blur.png)",
+        reactIcon: "url(./src/public/ReactJS icon.svg)"
+      },
       fontFamily: {
         sans: "Roboto, sans-serif"
       },
