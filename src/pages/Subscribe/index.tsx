@@ -1,9 +1,8 @@
-import { useMutation } from "@apollo/client";
-import { CREATE_SUBSCRIBER } from "../../graphql/queries/CREATE_SUBSCRIBER";
 import { useState, FormEvent } from "react";
 import { Logo } from "../../components";
 import { useNavigate } from "react-router-dom";
 import { Spinner } from "phosphor-react";
+import { useCreate_SubscriberMutation } from "../../graphql/generated";
 
 export const Subscribe = () => {
   const [name, setName] = useState<string>("");
@@ -11,7 +10,7 @@ export const Subscribe = () => {
 
   const navigate = useNavigate();
 
-  const [createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIBER);
+  const [createSubscriber, { loading }] = useCreate_SubscriberMutation();
 
   const handleSubscribe = async (e: FormEvent) => {
     e.preventDefault();
