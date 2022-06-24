@@ -89,7 +89,7 @@ export const Subscribe = () => {
       </div>
 
       <img
-        src="/src/public/code.png"
+        src="/src/assets/code.png"
         className="mt-10 relative z-1"
         alt="imagem da IDE de codigo visual studio code"
       />
