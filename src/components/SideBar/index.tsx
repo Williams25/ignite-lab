@@ -1,13 +1,9 @@
-import { useQuery } from "@apollo/client";
 import { Spinner } from "phosphor-react";
-import { GET_LESSONS } from "../../graphql/queries/GET_LESSONS";
-import { GetLessonsQueryResponse } from "../../types/GetLessonsQueryResponse";
 import { Lesson } from "../";
+import { useGet_LessonsQuery } from "../../graphql/generated";
 
 export const SideBar = () => {
-  const { data: lessons, loading } = useQuery<{
-    lessons: GetLessonsQueryResponse[];
-  }>(GET_LESSONS);
+  const { data: lessons, loading } = useGet_LessonsQuery();
 
   return (
     <aside className="w-[348px] bg-gray-700 p-6 border-l border-gray-600 overflow-hidden">
@@ -21,7 +17,7 @@ export const SideBar = () => {
             <Lesson
               key={item.id}
               title={item.title}
-              slug={item.slug}
+              slug={item.slug!}
               type={item.lessonType}
               avaliableAt={new Date(item.availableAt)}
             />
