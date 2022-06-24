@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Header, SideBar, Video } from "../../components";
-type Params = {
+export type Params = {
   slug: string;
 };
 
